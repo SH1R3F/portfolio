@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				cairo: "Cairo",
+				inconsolata: "Inconsolata, monospace",
 				roboto: "Roboto Mono",
 			},
 			colors: {
@@ -25,8 +26,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
-	corePlugins: {
-		preflight: false,
-	},
+	plugins: [require("flowbite/plugin")],
 }

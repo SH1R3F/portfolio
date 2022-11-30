@@ -2,7 +2,18 @@
 module.exports = {
 	content: ["./**/*.{html,js}"],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				cairo: "Cairo",
+				roboto: "Roboto Mono",
+			},
+			colors: {
+				portfolio: {
+					50: "#6d56c1",
+					100: "#7b67c7",
+				},
+			},
+		},
 		container: {
 			center: true,
 			padding: "1rem",
@@ -12,10 +23,6 @@ module.exports = {
 				lg: "992px",
 				xl: "1200px",
 			},
-		},
-		fontFamily: {
-			cairo: "Cairo",
-			roboto: "Roboto Mono",
 		},
 	},
 	plugins: [],
